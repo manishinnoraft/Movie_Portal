@@ -1,0 +1,37 @@
+uuid: d62759fc-3801-432e-8df7-26c91ec81431
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.review.field_movie_title
+    - field.field.node.review.field_review
+    - node.type.review
+  module:
+    - user
+id: node.review.full
+targetEntityType: node
+bundle: review
+mode: full
+content:
+  field_movie_title:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_review:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

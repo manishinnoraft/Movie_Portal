@@ -1,0 +1,33 @@
+uuid: 2519c340-2e2a-421d-b046-3deb298abed7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.movie_block_here
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: views_block__movie_block_here_block_1
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:movie_block_here-block_1'
+settings:
+  id: 'views_block:movie_block_here-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      movie_list: movie_list

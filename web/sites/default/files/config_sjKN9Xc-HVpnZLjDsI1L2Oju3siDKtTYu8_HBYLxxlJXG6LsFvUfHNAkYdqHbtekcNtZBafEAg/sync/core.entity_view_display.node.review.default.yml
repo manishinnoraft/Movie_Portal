@@ -1,0 +1,36 @@
+uuid: 3413ad5d-0068-4813-8c29-98e3737128f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.review.field_movie_title
+    - field.field.node.review.field_review
+    - node.type.review
+  module:
+    - user
+id: node.review.default
+targetEntityType: node
+bundle: review
+mode: default
+content:
+  field_movie_title:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_review:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

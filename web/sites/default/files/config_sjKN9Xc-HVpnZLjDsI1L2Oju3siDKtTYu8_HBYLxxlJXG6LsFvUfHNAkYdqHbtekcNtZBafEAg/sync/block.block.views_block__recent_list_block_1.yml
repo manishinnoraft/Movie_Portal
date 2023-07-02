@@ -1,0 +1,38 @@
+uuid: a9be24c7-ae49-4ef0-8f72-912276cedec9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_list
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - olivero
+id: views_block__recent_list_block_1
+theme: olivero
+region: breadcrumb
+weight: -7
+provider: null
+plugin: 'views_block:recent_list-block_1'
+settings:
+  id: 'views_block:recent_list-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator

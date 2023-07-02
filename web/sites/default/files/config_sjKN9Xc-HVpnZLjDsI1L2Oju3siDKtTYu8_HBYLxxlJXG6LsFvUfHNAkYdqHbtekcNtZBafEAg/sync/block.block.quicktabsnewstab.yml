@@ -1,0 +1,34 @@
+uuid: d2429f43-74d4-4a71-abdb-cad82682c0c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+    - user
+  theme:
+    - olivero
+id: quicktabsnewstab
+theme: olivero
+region: breadcrumb
+weight: -6
+provider: null
+plugin: 'quicktabs_block:news_tab'
+settings:
+  id: 'quicktabs_block:news_tab'
+  label: 'QuickTabs - News Tab'
+  label_display: visible
+  provider: quicktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator

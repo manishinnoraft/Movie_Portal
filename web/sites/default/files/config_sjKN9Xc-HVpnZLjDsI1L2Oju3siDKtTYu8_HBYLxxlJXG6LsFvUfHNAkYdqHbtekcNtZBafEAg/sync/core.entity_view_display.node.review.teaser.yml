@@ -1,0 +1,24 @@
+uuid: 9c133a6d-a069-4fa5-ab27-0ef6d0e5bab1
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.review.field_movie_title
+    - field.field.node.review.field_review
+    - node.type.review
+  module:
+    - user
+id: node.review.teaser
+targetEntityType: node
+bundle: review
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_movie_title: true
+  field_review: true

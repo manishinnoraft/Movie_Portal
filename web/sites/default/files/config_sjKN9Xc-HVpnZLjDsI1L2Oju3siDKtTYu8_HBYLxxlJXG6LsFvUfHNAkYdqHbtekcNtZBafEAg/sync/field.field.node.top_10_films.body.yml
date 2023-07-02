@@ -1,0 +1,23 @@
+uuid: 7ba74e84-de68-4cd8-b680-0f173a21e6a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.top_10_films
+  module:
+    - text
+id: node.top_10_films.body
+field_name: body
+entity_type: node
+bundle: top_10_films
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

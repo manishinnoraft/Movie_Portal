@@ -1,0 +1,18 @@
+uuid: b6d776f6-8887-492f-9f82-0ca550e6d3fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Movie List'
+type: movie_list
+description: 'This describes list of Movies based on various criteria'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

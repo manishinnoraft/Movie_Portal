@@ -1,0 +1,26 @@
+uuid: fa59892f-90dc-4818-bfff-31ebfcbf5e4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.movie_list.field_date_added
+    - field.field.node.movie_list.field_list_of_movies
+    - field.field.node.movie_list.field_movies_grid
+    - node.type.movie_list
+  module:
+    - user
+id: node.movie_list.teaser
+targetEntityType: node
+bundle: movie_list
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date_added: true
+  field_list_of_movies: true
+  field_movies_grid: true

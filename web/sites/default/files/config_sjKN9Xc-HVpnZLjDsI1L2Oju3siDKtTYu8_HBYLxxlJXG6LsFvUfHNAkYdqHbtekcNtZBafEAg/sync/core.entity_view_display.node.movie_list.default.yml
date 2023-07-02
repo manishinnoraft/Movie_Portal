@@ -1,0 +1,31 @@
+uuid: 4ed8c57e-b93b-4efa-b989-c3bf9aa85377
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movie_list.field_date_added
+    - field.field.node.movie_list.field_list_of_movies
+    - field.field.node.movie_list.field_movies_grid
+    - node.type.movie_list
+  module:
+    - user
+id: node.movie_list.default
+targetEntityType: node
+bundle: movie_list
+mode: default
+content:
+  field_list_of_movies:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_date_added: true
+  field_movies_grid: true

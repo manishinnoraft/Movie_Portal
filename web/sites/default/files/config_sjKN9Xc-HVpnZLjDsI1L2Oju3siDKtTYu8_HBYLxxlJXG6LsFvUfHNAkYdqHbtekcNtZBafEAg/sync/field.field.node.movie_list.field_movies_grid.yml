@@ -1,0 +1,29 @@
+uuid: d4dafa48-a045-4f17-a188-4c20e60cf542
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movies_grid
+    - node.type.movie
+    - node.type.movie_list
+id: node.movie_list.field_movies_grid
+field_name: field_movies_grid
+entity_type: node
+bundle: movie_list
+label: 'Movies Grid'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      movie: movie
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

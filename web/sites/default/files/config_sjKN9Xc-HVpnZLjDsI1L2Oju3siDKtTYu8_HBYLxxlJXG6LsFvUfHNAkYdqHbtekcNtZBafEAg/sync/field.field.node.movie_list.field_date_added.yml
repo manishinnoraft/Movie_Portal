@@ -1,0 +1,21 @@
+uuid: 8f859e0b-ae5e-40c8-a570-2889cd020c94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_added
+    - node.type.movie_list
+  module:
+    - datetime
+id: node.movie_list.field_date_added
+field_name: field_date_added
+entity_type: node
+bundle: movie_list
+label: 'Date Added'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,36 @@
+# Ignore core Drupal files and directories
+/core
+/modules/contrib
+/themes/contrib
+/profiles/contrib
+/sites/*/settings.php
+/sites/*/settings.local.php
+/sites/*/services.yml
+
+# Ignore contributed modules and themes downloaded via Composer
+/web/core
+/web/modules/contrib
+/web/themes/contrib
+/web/profiles/contrib
+/vendor
+
+# Ignore private files directory
+/sites/*/files
+
+# Ignore development files and directories
+/.idea
+/.vscode
+/.sass-cache
+/node_modules
+/web/libraries
+/web/sites/default/files/css
+/web/sites/default/files/js
+/web/sites/default/files/php
+
+# Ignore backup files
+*.bak
+*.swp
+
+# Ignore configuration export files
+/config/sync
+
